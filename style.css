@@ -77,18 +77,19 @@ body {
 }
 
 .shows{
-    background: rgb(10, 10, 10);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1.2rem;
+  color: #fff;
 }
 
-.show{
+
+.showComp, .showPlayer{
     display: flex;
     align-items: center;
-    justify-content: center;
-    background : rgb(41, 40, 40);
+    justify-content: space-around;
+    margin: auto 10px;
+    background : rgb(129, 127, 127);
     height: 220px;
 }
 

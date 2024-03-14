@@ -13,6 +13,14 @@ const drawGame = () => {
     console.log("The game is draw");
 }
 
+const restart = document.getElementById("restart");
+
+const restartGame = (restart) => {
+restart.addEventListener("click", ()=>{
+    
+})
+}
+
 const showWinner = (userWin) => {
     if(userWin){
         console.log("you win");
@@ -23,6 +31,8 @@ const showWinner = (userWin) => {
 
 const playGame = (userChoice) => {
     console.log("user choice", userChoice);
+    const nabin = document.querySelector(".showPlayer");
+    nabin.innerHTML = "<h1> heading</h1>";
     const comChoice = compChoice();
     console.log(comChoice);
     if(userChoice == comChoice){
